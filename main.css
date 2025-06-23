@@ -1,0 +1,245 @@
+/* Reset e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* Container geral */
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header e footer */
+header, footer {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+/* Navegação */
+nav {
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Menu hamburguer */
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Flex container com wrap e espaçamento */
+.containe-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Sobre loja - imagem */
+#sobre_loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+/* Seções gerais */
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+/* Lista veículos - flex com wrap */
+.lista-veiculos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lista-veiculos li {
+    list-style-type: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+/* Botões */
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0e7a45;
+}
+
+/* Botão enviar form centralizado */
+.btn-enviar {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+}
+
+/* Preço com preço antigo riscado */
+.prece {
+    margin: 16px 0;
+    display: block;
+}
+
+.prece del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Container formulário */
+.container-formulario {
+    max-width: 600px;
+    margin: 30px auto 45px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos do formulário */
+.form-campo {
+    margin-bottom: 20px;
+}
+
+.form-campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão dentro do container */
+.container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.container button:hover {
+    background-color: #119759;
+    transition-duration: 0.2s;
+}
+
+/* Mensagens de erro */
+.error {
+    color: red;
+}
+
+/* Limite do botão no form */
+form button {
+    max-width: 120px;
+}
+
+/* Footer lista */
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .lista-veiculos li {
+        max-width: 45%;
+    }
+
+    #sobre_loja img {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .containe-flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .lista-veiculos li {
+        max-width: 100%;
+    }
+}
